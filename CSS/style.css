@@ -1,6 +1,31 @@
-.logo
+.body
 {
-    color: green;
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'poppins', sans-serif;
+    margin: 0%;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container
+{
+    max-width: 1200px;
+    margin: 0% auto;
+}
+.Col-100
+{
+   width: 100%; 
+}
+.Col-25
+{
+    width: 25%;
+}
+.col-33
+{
+    width: 33%;
+}
+.col-50
+{
+    width: 50%;
 }
