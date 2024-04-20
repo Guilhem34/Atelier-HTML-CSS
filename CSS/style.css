@@ -1,3 +1,6 @@
+
+/* General*/
+
 body{
     padding: 0;
     margin: 0;
@@ -33,12 +36,18 @@ body{
     text-align: center;
 }
 
-/* menu */
-h3{
+h2{
+    color: #029D5B;
+    font-size: 50px;
+}
+
+/* MENU*/
+
+h1{
     color: #045f38;
     font-weight:bold;
     font-size: 1.5rem;
-}
+    }
 li{
     list-style: none;
     font-weight: bold;
@@ -74,24 +83,15 @@ nav ul{
     position: sticky;
     top: 0;
     z-index: 100;
-}
 
-@media screen and (max-width: 768px) {
-    .media {
-        display: flex;
-        flex-direction: column;
-        font-size: 1rem;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .wrap {
-        display: flex;
-        flex-wrap: wrap;    
-          
-    }
+#icons {
+        cursor: pointer;
+        display: none;
+      }
 }
 
 /* banner */
+
 .banner{
     width: 100%;
 }
@@ -115,6 +115,7 @@ nav ul{
 }
 
 /* teams */
+
 .img-team{
     width: 200px;
     height: 200px;
@@ -128,23 +129,27 @@ nav ul{
     width: 100%;
     height: auto;
     
-    
 }
 .stat h4{
     color: yellow;
     font-size: 50px;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 0%;
     
-
 }
 .stat p{
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: white;
     font-size: 20px;
 }
+.names{
+    font-size: 30px;
+    font-weight: bold;
+}
+
 /* Service */
+
 .service{
     background-color: #fff;
    
@@ -153,20 +158,74 @@ nav ul{
 .logo{
     width: 150px;
     height: 150px;
+    margin-top: 50PX;
     
 
     
 }
 .service-logo{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     background-color: #efefef;
-    padding: 50px;
     margin: auto;
+    padding: 20px;
     border-radius: 10px;
 
 }
-
-.text3{
-    align-items: center;
+.service p{
+    font-size: 30px;
+    font-weight: bold;
 }
+
+
+/* Formulaire */
+
+.formulaire{
+    background-color: #053B44;
+}
+.titre{
+    color: yellow;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 50px;
+}
+.formulaire P{
+font-size: 25px;
+color: #fff;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    /* menu responsive */
+    #icons {
+      display: block;
+    }
+    #icons:before {
+      content: "\2630";
+    }
+    .active #icons:before {
+      content: "\2715";
+    }
+    nav ul {
+      position: fixed;
+      left: -100%;
+      top: 5%;
+      flex-direction: column;
+      background: skyblue;
+      width: 100%;
+      text-align: center;
+      transition: 0.25s;
+    }
+    nav li {
+      padding: 3px 0;
+    }
+    nav li:hover {
+      background: rgb(157, 217, 240);
+    }
+    nav.active ul {
+      left: 0;
+    }
+  }
