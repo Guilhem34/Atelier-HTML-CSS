@@ -19,6 +19,9 @@ body{
 .col-100{
     width: 100%;
 }
+.col-49{
+    width: 49%;
+}
 .col-50{
     width: 50%;
 }
@@ -106,6 +109,7 @@ a:hover{
 }
 
 /* banner */
+
 .banner img{
     width: 100%;
     height: auto;
@@ -114,7 +118,7 @@ h1{
     text-align: end;
     color: #fff;
     margin-top: -250px;
-    font-size: 3rem;
+    font-size: 3vw;
     margin-right: 7%;
     margin-bottom: 150px;
 }
@@ -129,6 +133,7 @@ h1{
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 60px;
+    
 }
 .img-team{
     width: 300px;
@@ -143,6 +148,7 @@ h1{
 .teams p{
     margin-bottom: 150px;
     margin-top: 10px;
+    color: #565E65;
 }
 /* Statistic */
 .stat{
@@ -169,8 +175,8 @@ h1{
     background-color: #fff;
 }
 .service-logo{
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     background-color: #efefef;
     border-radius: 20px;
     display: flex;
@@ -209,12 +215,202 @@ color: #fff;
 .form-control:focus{
     outline: none;
 }
+.bouton-jaune{
+    height: 70px;
+    width: 230px;
+    background-color: yellow; /* couleur jaune */
+    border: none;
+    color: #053B44; /* texte en blanc pour contraste */
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 20px; /* taille de la police */
+    border-radius: 40px; /* coins arrondis */
+    cursor: pointer; /* curseur de souris */
+    transition: background-color 0.2s; /* transition en douceur lors du survol */
+}
+.bouton-jaune:hover {
+    background-color: rgba(238, 238, 84, 0.979); /* couleur jaune légèrement plus claire lors du survol */
+  }
+.setup-bouton{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+}
+
+/* A PROPOS */
+
+.teamwork{
+    height: 400px;
+    width: 100%;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+.ata{
+    justify-content: space-between;
+}
+.cont-01{
+    height: 400px;
+    width: 100%;
+    margin-top: 100px;
+    border-radius: 20px;
+    border: 2px solid #053B44;
+}
+h6{
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.cont-01 p{
+    margin-bottom: 40px;
+    color: #565E65;
+}
+.ico{
+    height: 110px;
+    width: 110px;
+    border: 5px solid #053B44;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.logos{
+    padding-top: 25px;
+}
+.a-propos b{
+    color: #053B44;
+}
+.galerie p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+.img-gal{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.round-button {
+    width: 60px; /* Vous pouvez ajuster la taille du bouton */
+    height: 60px; /* Même taille que la largeur pour faire un bouton rond */
+    border-radius: 50%; /* Pour rendre le bouton rond */
+    border: 2px solid;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  .round-button:hover{
+    background-color: #191a1b;
+    border: 2px solid rgb(255, 255, 5);
+
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(220deg); /* Rotation de la flèche */
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid black; /* Couleur et épaisseur de la flèche */
+    border-right: 2px solid black; /* Couleur et épaisseur de la flèche */
+  }
+  .arrow1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg); /* Rotation de la flèche */
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid black; /* Couleur et épaisseur de la flèche */
+    border-right: 2px solid black; /* Couleur et épaisseur de la flèche */
+  }
+  .arrow:hover{
+    border-top: 2px solid yellow; /* Couleur et épaisseur de la flèche */
+    border-right: 2px solid yellow; /* Couleur et épaisseur de la flèche */
+  }
+  .arrow1:hover{
+    border-top: 2px solid yellow; /* Couleur et épaisseur de la flèche */
+    border-right: 2px solid yellow; /* Couleur et épaisseur de la flèche */
+  }
+  .test{
+    display: flex;
+    justify-content: right;
+    margin-bottom: 50px;
+  }
+.contact{
+    width: 100%;
+    height: auto;
+    background-color: #053B44;
+}
+.contact h4{
+    margin-top: 60px;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.contact p{
+    color: #fff;
+    
+}
+.test12{
+    color: yellow;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test88{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.bas-page{
+    background-color: #012930;
+    color: #fff;
+}
+.bas-page P{
+    margin: 50px;
+}
+.logoo{
+    font-size: 40px;
+    width: 10%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+
+}
+
  @media (max-width: 1026px) {
 
     .col-md-100{
         width: 100%;
     }
+    h1{
+        text-align: center;
+        color: #fff;
+        margin-top: -20%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 5vw;
+        
+    }
+    
+    .banner h1 span{
+        color: rgb(230, 216, 20);
+        font-size: 5vw;
+    }
 
+    .center01{
+        display: flex;
+        justify-content: center;
+    }
     .p-md-0{
         padding-left: 0;
         padding-right: 0;
@@ -248,5 +444,12 @@ color: #fff;
    
     nav.active ul {
       left: 0;
+    }
+    .auto-height{
+        height: auto;
+    }
+    .margin-15{
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
