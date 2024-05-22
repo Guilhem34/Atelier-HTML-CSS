@@ -229,7 +229,7 @@ color: #fff;
     width: 230px;
     background-color: yellow; /* couleur jaune */
     border: none;
-    color: #053B44; /* texte en blanc pour contraste */
+    color: #053B44; 
     margin-top: 35px;
     font-weight: bold;
     font-size: 20px; /* taille de la police */
@@ -351,6 +351,8 @@ h6{
     display: flex;
     justify-content: space-around;
   }
+  
+  /* contact */
 .contact{
     width: 100%;
     height: auto;
@@ -407,10 +409,8 @@ h6{
     align-items: center;
     margin-top: 40px;
     justify-content: center;
-
-
 }
-
+/* Modifications du code quand ecran en dessous de 1026px */
  @media (max-width: 1026px) {
 
     .col-md-100{
