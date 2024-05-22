@@ -107,7 +107,6 @@ a:hover{
     color: #029D5B;
 }
 .menu-sticky {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -351,7 +350,7 @@ h6{
     display: flex;
     justify-content: space-around;
   }
-  
+
   /* contact */
 .contact{
     width: 100%;
